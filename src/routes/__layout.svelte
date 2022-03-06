@@ -1,6 +1,6 @@
 <script>
+	import '../app.css';
 	import Header from '$lib/Header.svelte';
-	import '../app.postcss';
 </script>
 
 <div class="w-full h-12 fixed top-0">
