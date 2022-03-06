@@ -7,6 +7,6 @@
 	<Header />
 </div>
 
-<main class="pt-12 w-screen h-screen">
+<main class="pt-12 w-screen h-screen bg-white dark:bg-black">
 	<slot />
 </main>

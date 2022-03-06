@@ -1,19 +1,18 @@
 <script lang="ts">
-    import Icon from '$lib/icons/Icon.svelte';
-    import Loader from '$lib/Loader.svelte';
-
-    export let action = 'click';
-    export let icon:string;
-    export let iconSize:string;
-    export let size = 'text-base';
+	import Icon from '$lib/Icon.svelte';
+	export let action: string = 'click';
+	export let icon: string = '';
+	export let bgColor: string = 'bg-gray-500';
+	export let textColor: string = 'text-white';
 </script>
 
-<button class="{size} py-1 px-3 text-blueGray-500 bg-blueGray-300 bg-opacity-60 hover:bg-red-700 hover:text-white flex rounded-sm items-center space-x-2">
-    <!-- <Loader /> -->
-    {#if icon}
-        <Icon {icon} size={iconSize}/>
-    {/if}
-    <p class="pb-1">
-        {action}
-    </p>
+<button class="h-8 px-2 space-x-2 rounded-md shadow-md flex items-center {bgColor} {textColor}">
+	{#if icon}
+		<div class="py-1 h-full">
+			<Icon {icon} />
+		</div>
+	{/if}
+	<p class="text-base pr-1">
+		{action}
+	</p>
 </button>
