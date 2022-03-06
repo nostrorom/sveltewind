@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import Icon from '$lib/Icon.svelte';
-	import logo from '/nosdev_logo_64_nobg.png';
+	import logo from 'nosdev_logo_64_nobg.png';
 </script>
 
 <header class="flex w-full h-full md:px-2 lg:px-4 bg-blueGray-100 justify-between items-center">
