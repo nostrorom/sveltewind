@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import Button from '$lib/Button.svelte';
+	console.log(process.env.SPIRAL);
 </script>
 
 <svelte:head>
