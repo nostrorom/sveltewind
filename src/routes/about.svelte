@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>About</title>
 </svelte:head>
 
 <section class="m-auto py-96 text-6xl font-bold">

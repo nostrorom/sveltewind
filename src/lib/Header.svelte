@@ -1,0 +1,43 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+	import Icon from '$lib/Icon.svelte';
+</script>
+
+<header class="flex w-full h-full md:px-2 lg:px-4 justify-between items-center">
+	<div class="h-full text-slate-400 hover:text-red-700 p-2">
+		<a href="https://github.com/Nostrorom?tab=repositories" target="_blank">
+			<Icon icon="github" />
+		</a>
+	</div>
+
+	<nav class="h-full">
+		<ul class="flex space-x-2 uppercase text-slate-500 h-full">
+			<li class="h-full">
+				<a class="" sveltekit:prefetch href="/">
+					<div
+						class="h-full px-4 flex items-center border-b border-slate-500 border-opacity-0 hover:text-red-700 hover:border-red-500"
+						class:border-opacity-100={$page.url.pathname === '/'}
+					>
+						Home
+					</div>
+				</a>
+			</li>
+			<li class="h-full">
+				<a class="" sveltekit:prefetch href="/about">
+					<div
+						class="h-full px-4 flex items-center border-b border-slate-500 border-opacity-0 hover:text-red-700 hover:border-red-500"
+						class:border-opacity-100={$page.url.pathname === '/about'}
+					>
+						About
+					</div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="h-full text-slate-400 hover:text-red-700 p-2">
+		<a href="https://github.com/Nostrorom?tab=repositories" target="_blank">
+			<Icon icon="github" />
+		</a>
+	</div>
+</header>

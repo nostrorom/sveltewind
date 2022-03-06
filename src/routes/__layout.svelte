@@ -1,5 +1,12 @@
 <script>
 	import '../app.css';
+	import Header from '$lib/Header.svelte';
 </script>
 
-<slot />
+<div class="w-full h-12 fixed top-0 bg-white dark:bg-black">
+	<Header />
+</div>
+
+<main class="pt-12 w-screen h-screen">
+	<slot />
+</main>
