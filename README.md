@@ -1,3 +1,3 @@
-## Template
+# Template
 
-Base template for SvelteKit + Tailwind + TS
+Svelte + Tailwind + Typescript + Playwright
