@@ -3,7 +3,7 @@ import { type PlaywrightTestConfig, devices } from '@playwright/test';
 const config: PlaywrightTestConfig = {
 	webServer: {
 		command: 'npm run build && npm run preview',
-		port: 3000
+		port: 4173
 	},
 	forbidOnly: !!process.env.CI,
 	retries: process.env.CI ? 2 : 0,
@@ -25,4 +25,5 @@ const config: PlaywrightTestConfig = {
 		}
 	]
 };
+
 export default config;

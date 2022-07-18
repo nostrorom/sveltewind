@@ -1,8 +1,7 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
+    "allowJs": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
@@ -16,6 +15,12 @@
       "$lib/*": [
         "src/lib/*"
       ],
+      "$json": [
+        "src/json"
+      ],
+      "$json/*": [
+        "src/json/*"
+      ],
       "$shared": [
         "src/shared"
       ],
@@ -27,7 +32,7 @@
       ],
       "$types/*": [
         "src/types/*"
-      ],
+      ]
     }
   }
 }

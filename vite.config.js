@@ -1,5 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import {resolve} from 'path'
+import { resolve } from 'path';
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -7,7 +7,8 @@ const config = {
 	resolve: {
 		alias: {
 			$types: resolve('./src/types'),
-			$stores: resolve('./src/data')
+			$json: resolve('./src/json'),
+			$shared: resolve('./src/shared')
 		}
 	}
 };
