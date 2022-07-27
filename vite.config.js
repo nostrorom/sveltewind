@@ -7,7 +7,6 @@ const config = {
 	resolve: {
 		alias: {
 			$types: resolve('./src/types'),
-			$json: resolve('./src/json'),
 			$shared: resolve('./src/shared')
 		}
 	}

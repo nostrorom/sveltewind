@@ -5,7 +5,7 @@
 		"node": ">16.x"
 	},
 	"scripts": {
-		"up": "pnpm add -g pnpm && pnpm up && pnpm i",
+		"up": "pnpm add -g pnpm && pnpm up",
 		"dev": "vite dev",
 		"build": "vite build",
 		"package": "svelte-kit package",
