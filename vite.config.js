@@ -9,7 +9,8 @@ const config = {
 			$types: resolve('./src/types'),
 			$shared: resolve('./src/shared')
 		}
-	}
+	},
+	test: {}
 };
 
 export default config;
