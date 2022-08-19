@@ -1,3 +1,3 @@
 # Template
 
-Svelte + Tailwind + Typescript + Playwright
+Svelte + Tailwind + Typescript + Playwright + Vitest

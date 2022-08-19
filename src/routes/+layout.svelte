@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { browser } from '$app/env';
+	import Header from '$lib/Header.svelte';
 
 	if (browser) {
 		if (
@@ -12,16 +13,15 @@
 			document.documentElement.classList.remove('dark');
 		}
 	}
-
-	const switchDarkmode = (): void => {
-		if (localStorage.theme === 'light') {
-			localStorage.theme = 'dark';
-			document.documentElement.classList.add('dark');
-		} else {
-			localStorage.theme = 'light';
-			document.documentElement.classList.remove('dark');
-		}
-	};
 </script>
 
-<slot />
+<main
+	class="w-screen min-h-screen bg-neutral-100 dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400"
+>
+	<header class="h-12">
+		<Header />
+	</header>
+	<div class="pt-12">
+		<slot />
+	</div>
+</main>
