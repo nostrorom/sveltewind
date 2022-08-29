@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	import Header from '$lib/Header.svelte';
 
 	if (browser) {
