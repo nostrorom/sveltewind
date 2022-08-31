@@ -7,14 +7,6 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true,
-		"paths": {
-			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"],
-			"$shared": ["src/shared"],
-			"$shared/*": ["src/shared/*"],
-			"$types": ["src/types"],
-			"$types/*": ["src/types/*"]
-		}
+		"strict": true
 	}
 }
