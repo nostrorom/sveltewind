@@ -12,6 +12,9 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
+			$admin: '/src/admin',
+			$data: '/src/data',
+			$json: '/src/json',
 			$types: '/src/types',
 			$shared: '/src/shared'
 		}

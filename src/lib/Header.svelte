@@ -20,12 +20,12 @@
 	<nav>
 		<ul class="flex h-full space-x-4">
 			<li class="h-full hover:text-amber-500">
-				<a class="" sveltekit:prefetch href="/">
+				<a class="" data-sveltekit-prefetch href="/">
 					<div class="" class:text-emerald-600={$page.url.pathname === '/'}>Home</div>
 				</a>
 			</li>
 			<li class="h-full hover:text-amber-500">
-				<a class="" sveltekit:prefetch href="/about">
+				<a class="" data-sveltekit-prefetch href="/about">
 					<div class="" class:text-fuchsia-600={$page.url.pathname === '/about'}>About</div>
 				</a>
 			</li>
