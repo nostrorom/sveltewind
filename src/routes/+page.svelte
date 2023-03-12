@@ -1,5 +1,5 @@
 <script lang="ts">
-	const demo: string = 'Home';
+	const demo = 'Home';
 </script>
 
 <h1

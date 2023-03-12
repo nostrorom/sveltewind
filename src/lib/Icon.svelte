@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let icon: string;
-	export let size: string = 'h-6 w-6';
+	export let size = 'h-6 w-6';
 </script>
 
 <div class="flex items-center justify-center">
